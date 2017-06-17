@@ -1,2 +1,2 @@
 # EliasJMote.github.io
-A website for my indie video game business, ROC Studios
+A website for my portfolio.
