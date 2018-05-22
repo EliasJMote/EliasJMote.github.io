@@ -4,20 +4,12 @@
 		<title>Elias Mote</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1">
+
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		<style>
-			body  {
-			    background-color: white;
-			    color: black;
-			}
-			.grid-container {
-				display: grid;
-				grid-template-columns: auto auto auto auto;
-				padding: 10px;
-			}
-		</style>
+
+		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 
 	<body>
@@ -36,7 +28,7 @@
 
 				<div class="collapse navbar-collapse" id="myNavbar">
 					<ul class="nav navbar-nav">
-						<li class="active"><a href="index.html">Home</a></li>
+						<li><a href="index.html">Home</a></li>
 						<li><a href="index.html#about">About</a></li>
 						<li><a href="index.html#games">Games</a></li>
 						<li><a href="index.html#software">Software</a></li>
@@ -46,46 +38,56 @@
 			</div>
 		</div>
 
-		<div id="home">
+		<div class="home" id="home">
 			<h3>A front end web developer and indie game developer who specializes in retro games.</h3>
 			<iframe width="640" height="360" src="https://www.youtube.com/embed/kkGNZ2E_EGs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 		</div>
 
-		<div id="about">
+		<div class="about" id="about">
 			<p>Hello! I'm Elias Mote, a Front End Web Developer, Software Developer and Indie Video Game Developer.</p>
 			<p>Languages I've worked with:</p>
 			<ul>
 				<li>C</li>
 				<li>C++</li>
+				<li>C#</li>
+				<li>Python</li>
 				<li>Java</li>
 				<li>Lua</li>
 				<li>HTML</li>
 				<li>CSS</li>
 				<li>Javascript</li>
 			</ul>
-			<br>
+			<p>Frameworks I've worked with:</p>
+			<ul>
+				<li>Unity</li>
+				<li>Corona SDK</li>
+				<li>Android Studio</li>
+			</ul>
+			
 			<h4>Contact:</h4>
 			<p>For web dev and software inquiries: <a href="mailto:eliasjmote@gmail.com">eliasjmote@gmail.com</a></p>
 		 	<p>For indie game dev inquiries: <a href="mailto:rulerofchaosstudios@gmail.com">rulerofchaosstudios@gmail.com</a></p>
-		 	<br>
+		 	
 		 	<p>Social media:</p>
-		 	<a href="https://twitter.com/ROC_Studios/">Twitter</a>
-		 	<a href="https://www.facebook.com/RulerOfChaosStudios/">Facebook</a>
-		 	<a href="https://www.linkedin.com/in/elias-mote-bb6905118/">LinkedIn</a>
+		 	<a href="https://twitter.com/ROC_Studios/"><img src="images/Twitter_Icon.jpg" alt="Twitter Icon" width="64px"></a>
+		 	<a href="https://www.facebook.com/RulerOfChaosStudios/"><img src="images/Facebook_Icon.jpg" alt="Facebook Icon" width="64px"></a>
+		 	<a href="https://www.linkedin.com/in/elias-mote-bb6905118/"><img src="images/Linkedin_Icon.jpg" alt="Linkedin Icon" width="64px"></a>
+
 	 	</div>
 
-	 	<div id="games">
+	 	<div class="games" id="games">
+	 		<h2>Game studio: Roc Studios</h2>
 		 	<!--<h4>Link to my future video game studio site:</h4>
 		 	<h4><a href="http://rulerofchaosstudios.com">ROC Studios</a></h4>-->
-		 	<img src="ROC_Studios_Logo_Med.png" alt="ROC Studios Logo">
+		 	<img src="images/ROC_Studios_Logo_Med.png" alt="ROC Studios Logo">
 
 		 	<h2 class="text-left">Developed games</h2>
 
 		 	<div class="grid-container">
-		 		<div>
-		 			<a href="https://rocstudios.itch.io/cathode-ray-sunshine"><img src="Cathode_Ray_Sunshine.png" alt="Cathode Ray Sunshine"></a>
+		 		<div class="grid-item">
+		 			<a href="https://rocstudios.itch.io/cathode-ray-sunshine"><img src="images/Cathode_Ray_Sunshine.png" alt="Cathode Ray Sunshine" width="256px"></a>
 		 		</div>
-		 		<div style="padding: 5px">
+		 		<div class="grid-item">
 		 			<h3>Cathode Ray Sunshine</h3>
 		 			<p>Release Date: Feb 28, 2018</p>
 		 			<p>Development time: ~1 week</p> 
@@ -95,10 +97,10 @@
 		 	</div>
 
 		 	<div class="grid-container">
-		 		<div>
-		 			<a href="https://rocstudios.itch.io/the-collection"><img src="The_Collection.png" alt="The Collection"></a>
+		 		<div class="grid-item">
+		 			<a href="https://rocstudios.itch.io/the-collection"><img src="images/The_Collection.png" alt="The Collection" width="256px"></a>
 		 		</div>
-		 		<div style="padding: 5px">
+		 		<div class="grid-item">
 		 			<h3>The Collection</h3>
 		 			<p>Release Date: Jul 14, 2017</p>
 		 			<p>Development time: ~1 week</p> 
@@ -108,10 +110,10 @@
 		 	</div>
 
 		 	<div class="grid-container">
-		 		<div>
-		 			<a href="https://github.com/EliasJMote/Chain-Knight"><img src="Chain_Knight.png" alt="Chain Knight"></a>
+		 		<div class="grid-item">
+		 			<a href="https://github.com/EliasJMote/Chain-Knight"><img src="images/Chain_Knight.png" alt="Chain Knight" width="256px"></a>
 		 		</div>
-		 		<div style="padding: 5px">
+		 		<div class="grid-item">
 		 			<h3>Chain Knight</h3>
 		 			<p>Release Date: Dec 3, 2016</p>
 		 			<p>Development time: ~2 weeks</p>
@@ -123,11 +125,11 @@
 		 	<h2 class="text-left">Unfinished games</h2>
 
 		 	<div class="grid-container">
-		 		<div>
-		 			<a href="http://gamejolt.com/games/legendoftheblades/259875"><img src="Legend_of_the_Blades.png" alt="Legend of the Blades"></a>
+		 		<div class="grid-item">
+		 			<a href="http://gamejolt.com/games/legendoftheblades/259875"><img src="images/Legend_of_the_Blades.png" alt="Legend of the Blades" width="256px"></a>
 		 		</div>
-		 		<div style="padding: 5px">
-		 			<h3 style="text-align: left">Legend of the Blades</h3>
+		 		<div class="grid-item">
+		 			<h3>Legend of the Blades</h3>
 		 			<p>Legend of the Blades is a 3/4 perspective action game with light RPG elements. You must travel the land and defeat the four knights who each wield a sword of elemental power - Rock, Crystal, Sun and Moon. After each knight has been defeated, acquire his/her sword and use it to make progress in the land of Lowendel. Crush your enemies with the mighty Rock Smasher or cast blades of mystical magic to vanquish foes from a distance with the Sword of Moonlight. Learn some of the details of each knight's past and defeat the villain that they could not beat, the Black Knight. It is currently in development.
 		 			</p>
 		 		</div>
@@ -135,11 +137,11 @@
 		 	<br><br>
 
  			<div class="grid-container">
- 				<div>
- 					<a href="http://gamejolt.com/games/night-of-the-crescent-moon-alpha-build/158600"><img src="Night_of_the_Crescent_Moon.jpg" alt="Night of the Crescent Moon"></a>
+ 				<div class="grid-item">
+ 					<a href="http://gamejolt.com/games/night-of-the-crescent-moon-alpha-build/158600"><img src="images/Night_of_the_Crescent_Moon.jpg" alt="Night of the Crescent Moon" width="256px"></a>
  				</div>
- 				<div style="padding: 5px">
- 					<h3 style="text-align: left">Night of the Crescent Moon</h3>
+ 				<div class="grid-item">
+ 					<h3>Night of the Crescent Moon</h3>
  					<p>Night of the Crescent Moon was a game I was developing back in late spring 2016. It is a text adventure game where you must answer the call of a ghostly voice calling out to you across the pale moonlight. To solve the mystery, you must collect a small number of items and speak with a handful of npc's who are more or less sympathetic to your quest. Be creative with your equipment usage and listen well to the characters in the game in order to discover the source of the ethereal voice. It is currently unfinished, and it may or may not be completed at a later date.
  					</p>
  				</div>
@@ -149,25 +151,33 @@
 
 		 	<h3 class="text-left">Video games I've helped contribute to:</h3>
 
-		 	<!--<div class="grid-container">
-		 		<div>
-		 			<a href="https://github.com/EliasJMote/VR-Orchestra-Conductor-Simulator" alt="VR Orchestra Conductor Simulator">VR Conductor Simulator</a>
-		 		</div>
-		 		<div style="padding: 5px;">
-		 			<h3 style="text-align: left;">VR Conductor Simulator</h3>
+		 	<div class="grid-container">
+		 		<div class="grid-item">
+		 			<a href="https://github.com/EliasJMote/VR-Orchestra-Conductor-Simulator" alt="VR Orchestra Conductor Simulator" width="256px">VR Conductor Simulator</a>
+		 			<h3>VR Conductor Simulator</h3>
 		 			<p>Release Date: May 2, 2018</p>
 		 			<p>Development time: ~3 weeks</p> 
 		 			<p>VR Conductor Simulator is a Oculus Rift game I helped develop for my senior project at SSU.
 		 			</p>
 		 		</div>
+		 		<!--<div class="grid-item">
+		 			<h3>VR Conductor Simulator</h3>
+		 			<p>Release Date: May 2, 2018</p>
+		 			<p>Development time: ~3 weeks</p> 
+		 			<p>VR Conductor Simulator is a Oculus Rift game I helped develop for my senior project at SSU.
+		 			</p>
+		 		</div>-->
 
 		 	</div>
-		 	</br>-->
 
-	 		<a href="https://github.com/davecparker/mars-app">Mars app</a>
+		 	<div class="grid-container">
+		 		<div class="grid-item">
+	 				<a href="https://github.com/davecparker/mars-app">Mars app</a>
+	 			</div>
+	 		</div>
 		 </div>
 
-		<div id="software">
+		<div class="software" id="software">
 		 	<h3 class="text-left">Mobile apps I've helped contribute to:</h3>
 			<a href="https://github.com/dylanmarcus/SingBetter">Sing Better app</a>
 		</div>

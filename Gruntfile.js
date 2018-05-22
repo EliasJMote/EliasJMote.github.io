@@ -32,22 +32,12 @@ module.exports = function(grunt){
 	                minifyURLs: true
               	},
               	files: {                                   // Dictionary of files 
-	                'dist/about.html': 'src/about.html',     // 'destination': 'source'
-	                'dist/footer.html': 'src/footer.html',
-	                'dist/games.html': 'src/games.html',
-	                'dist/index.html': 'src/index.html',
-	                'dist/software.html': 'src/software.html',
-	                'dist/websites.html': 'src/websites.html',
+	                'index.html': 'src/index.html',     // 'destination': 'source'
               	}
             },
             dev: {                                       // Another target 
               	files: {
-	                'dist/about.html': 'src/about.html',
-	                'dist/footer.html': 'src/footer.html',
-	                'dist/games.html': 'src/games.html',
-	                'dist/index.html': 'src/index.html',
-	                'dist/software.html': 'src/software.html',
-	                'dist/websites.html': 'src/websites.html',
+	                'index.html': 'src/index.html',
               	}
             }
         },
@@ -58,7 +48,7 @@ module.exports = function(grunt){
 	                expand: true,
 	                cwd: 'src/',
 	                src: ['**/*.{png,jpg,gif}'],
-	                dest: 'dist/'
+	                dest: 'images/'
 	            }]
         	}
         },

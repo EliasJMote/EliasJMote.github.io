@@ -1,0 +1,13 @@
+body  {
+    background-color: white;
+    color: black;
+    padding: 10px;
+}
+.grid-container {
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	
+}
+.grid-item {
+	padding: 10px;
+}
